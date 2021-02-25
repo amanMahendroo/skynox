@@ -1,0 +1,56 @@
+.right .title {
+	font-family: 'Rozha One', serif;
+	font-size: 3em;
+	white-space: nowrap;
+}
+
+.right .inset {
+	width: 60%;
+	margin: 3em;
+}
+
+.right .stars, .right .rate {
+	color: #0b6;
+}
+
+.right .submit .right .dispatch, .right .rating, .right .desc {
+	margin: 5px 0;
+}
+
+.right .submit, .right .add-wish, .right .add-cart, .right .rate {
+	cursor: pointer;
+}
+
+.right .price {
+	font-size: 2em;
+}
+
+.right .dispatch img {
+	height: 15px;
+}
+
+.right .buttons {
+	display: flex;
+	justify-content: space-between;
+	width: 420px;
+}
+
+.right .buttons div {
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 50px;
+	padding: 0 40px;
+	height: 50px;
+	margin: 5px 0;
+	border: 1px solid #000;
+}
+
+.right .add-cart {
+	background: #000;
+	color: #fff;
+}
+
+.right .add-wish {
+	background: transparent;
+	color: #000;
+}

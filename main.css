@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rozha+One&display=swap');
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background: #fffdfd;
+	user-select: none;
+}
+
+.container {
+	position: absolute;
+	width: 100vw;
+	height: 90vh;
+	top: 5vh;
+}
+
+.left, .right {
+	width: 50%;
+	height: 80%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.bottom {
+	height: 20%;
+	clear: both;
+	background: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+	.container {
+		height: 100vh;
+		top: 0;
+		font-size: 2em;
+	}
+
+	.left, .right {
+		width: 100%;
+		float: none;
+		height: 83vw;
+	}
+
+	.left .inset {
+		width: 100%;
+	}
+
+	.left .main {
+		width: 83vw;
+		height: 83vw;
+		float: right;
+	}
+
+	.left .thumb {
+		width: 16vw;
+		float: left;
+		display: block;
+	}
+
+	.left .thumb div {
+		width: 16vw;
+		height: 16vw;
+		margin: 4px 5px;
+	}
+
+	.left .left-btn, .left .right-btn {
+		display: none;
+	}
+
+	.right .change {
+		position: absolute;
+		right: 50px;
+		bottom: 50px;
+	}
+
+	.right .buttons {
+		display: block;
+		font-size: 0.9em;
+	}
+
+	.right .buttons div {
+		padding: 20px 40px;
+	}
+
+	.bottom {
+		height: auto;
+	}
+
+	.bottom .inset {
+		display: block;
+	}
+
+	.bottom .promise {
+		width: calc(100% - 100px);
+		padding: 50px;
+	}
+
+	.bottom .promise .icon {
+		width: 10vw;
+		line-height: 10vw;
+	}
+}
